@@ -1,41 +1,31 @@
-LIAR: A BENCHMARK DATASET FOR FAKE NEWS DETECTION
+# Fake News Detection System
 
-William Yang Wang, "Liar, Liar Pants on Fire": A New Benchmark Dataset for Fake News Detection, to appear in Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL 2017), short paper, Vancouver, BC, Canada, July 30-August 4, ACL.
-=====================================================================
-Description of the TSV format:
+## Overview
+This project detects whether a news article is real or fake using Machine Learning and Natural Language Processing (NLP).
 
-Column 1: the ID of the statement ([ID].json).
-Column 2: the label.
-Column 3: the statement.
-Column 4: the subject(s).
-Column 5: the speaker.
-Column 6: the speaker's job title.
-Column 7: the state info.
-Column 8: the party affiliation.
-Column 9-13: the total credit history count, including the current statement.
-9: barely true counts.
-10: false counts.
-11: half true counts.
-12: mostly true counts.
-13: pants on fire counts.
-Column 14: the context (venue / location of the speech or statement).
+## Features
+- Text preprocessing using NLP techniques
+- TF-IDF vectorization
+- Logistic Regression model
+- Real-time prediction using Streamlit
 
-Note that we do not provide the full-text verdict report in this current version of the dataset,
-but you can use the following command to access the full verdict report and links to the source documents:
-wget http://www.politifact.com//api/v/2/statement/[ID]/?format=json
+## Technologies Used
+- Python
+- Pandas
+- Scikit-learn
+- Streamlit
+- Joblib
 
-======================================================================
-The original sources retain the copyright of the data.
+## How to Run
 
-Note that there are absolutely no guarantees with this data,
-and we provide this dataset "as is",
-but you are welcome to report the issues of the preliminary version
-of this data.
+1. Install dependencies:
+   pip install -r requirements.txt
 
-You are allowed to use this dataset for research purposes only.
+2. Run the application:
+   streamlit run fake_news_detector.py
 
-For more question about the dataset, please contact:
-William Wang, william@cs.ucsb.edu
+## Dataset
+This project uses the LIAR dataset for training and testing.
 
-v1.0 04/23/2017
-
+## Author
+M Surendra Reddy
