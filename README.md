@@ -32,6 +32,8 @@ This project detects whether a news article is real or fake using Machine Learni
 
 ## Dataset
 - LIAR dataset used for training and testing
+  
+⚠️ Note: Predictions are probabilistic and may not always reflect real-world factual accuracy.
 
 ## Author
 M Surendra Reddy
